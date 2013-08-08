@@ -27,10 +27,13 @@ exports['awesome'] = {
     // setup here
     done();
   },
-  'no args': function(test) {
+  'simple': function(test) {
     test.expect(1);
     // tests here
-    test.equal(developerexcuses.awesome(), 'awesome', 'should be awesome.');
-    test.done();
+    developerexcuses(function(err, excuses){
+      var res = err || excuses;
+      test.notEqual(res, null, 'should not be null');
+      test.done();
+    });
   },
 };

@@ -1,0 +1,6 @@
+#!/usr/bin/env coffee
+
+developerexcuses = require '../lib/developerexcuses'
+
+developerexcuses (err, excuses) ->
+  if err then console.warn err else console.log excuses

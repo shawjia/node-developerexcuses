@@ -5,9 +5,13 @@ Get the latest excuses from http://developerexcuses.com/
 ## Getting Started
 Install the module with: `npm install developerexcuses`
 
-```javascript
-var developerexcuses = require('developerexcuses');
-developerexcuses.awesome(); // "awesome"
+To use the build in CLI: `npm install developerexcuses -g && developerexcuses`
+
+```coffeescript
+developerexcuses = require '../lib/developerexcuses'
+
+developerexcuses (err, excuses) ->
+  if err then console.warn err else console.log excuses
 ```
 
 ## Documentation
@@ -23,5 +27,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2013 shawjia  
+Copyright (c) 2013 shawjia
 Licensed under the MIT license.

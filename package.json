@@ -27,11 +27,24 @@
   "scripts": {
     "test": "grunt nodeunit"
   },
+  "bin": {
+    "developerexcuses": "bin/developerexcuses"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt-contrib-watch": "~0.4.0",
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "coffee-script": "~1.6.3"
   },
-  "keywords": []
+  "keywords": [
+    "developerexcuses",
+    "developer",
+    "excuses",
+    "joke",
+    "IT"
+  ],
+  "dependencies": {
+    "request": "~2.26.0"
+  }
 }
